@@ -1,0 +1,94 @@
+/* 头部导航模块 start */
+.nav_header_wrapper{
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  height: 107px;
+  font-size: 16px;
+  z-index: 999;
+  background-color: #fff;
+  border-bottom: 4px solid red;
+}
+
+.nav_head {
+  position: relative;
+  /* 需要设置宽度 */
+  margin: 0 auto;
+  /* 采取相对定位，但一定要设置高度，不然其子元素不能自己撑起高度 */
+  height: 107px;
+  width: 1200px;
+  line-height: 107px;
+}
+
+/* 头部导航-logo start*/
+/* 知识点：涉及到图片垂直居中 */
+.nav_head img {
+  /* 子绝父相 */
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0; 
+  left: 30px;
+  /* 设置宽高 */
+  width: 180px;
+  height: 63px;
+}
+
+/* 头部导航-菜单 start */
+.menu{
+  /* 子绝父相 */
+  position: absolute;
+  left: 250px;
+  top: 0;
+  bottom: 0;
+  font-size: 18px;
+  color: #6c6c6c;
+}
+
+.menu ul {
+  display: inline-block;
+}
+
+.menu ul li {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  border-right: 1px solid black;
+}
+
+.menu ul .m_last {
+  border: none;
+}
+
+.menu ul li span {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.menu ul li .m_one span:first-child{
+  color: crimson; 
+  margin-left: 0px;
+}
+/* 头部导航模块 end */
+
+/* 左侧固定框-二维码 */
+.outer {
+  position: fixed;
+  bottom: 200px;
+  z-index: 5;
+  width: 162px;
+  background-color: #fff;
+}
+
+.inner {
+  margin: 8px;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #f5e9eb;
+}
+
+.inner p {
+  margin-top: 5px; 
+  color: #6c6c6c;
+}

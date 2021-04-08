@@ -1,0 +1,143 @@
+/* 主体模块main start*/
+.main {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* 1. banner模块 */
+.pdd_banner {
+  margin: 107px auto 0px auto;
+}
+
+/* 2. 广场模块 */
+.squre {
+  width: 1200px;
+  /* 这里不需要设高度，因为一个网页的主体内容可能会随着时间增加而增加，设置高度反而限制死了，直接让其里的子元素撑起高度*/
+  margin: 70px auto 30px auto;
+}
+
+.title_group {
+  /* 这里又出现了高度塌陷：因为给里面的title设置了浮动，所以需要清除浮动 */
+  overflow: hidden;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #c1c1c1;
+
+}
+.title_group .title {
+  /* 左浮动 */
+  float: left;
+  font-size: 20px;
+}
+
+.more{
+  float: right;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 5px;
+  color: #868686;
+}
+
+.content-group {
+  overflow: hidden;
+  padding-top: 40px;
+  margin-bottom: 40px;
+
+}
+
+.content-group .cat-wrap {
+  /* 现将其转换为块元素 */
+  display: block; 
+  /* 让块元素显示在一行上，利用float */
+  float: left;
+  /* 宽度不够，排列不下的a会自动排到下一行 */
+  margin-bottom: 17px;
+  margin-right: 17px;
+  padding: 14px;
+  background-color: #fff;
+}
+
+/* 给最后一个a超链接图片去掉右外边距 */
+.content-group .cat-wrap:last-child{
+  margin-right: 0px;
+}
+
+.content-group .cat-wrap .cat {
+  width: auto;
+  height: auto;
+}
+
+.content-group .subject-wrap {
+  float:left;
+  background-color:#fff;
+  padding: 10px;
+  margin-bottom: 45px;
+  margin-right: 45px;
+}
+
+/* 删除每一排最后一个元素的右外边距，从0开始，所以是奇数位even */
+.content-group .subject-wrap:nth-child(even) {
+  margin-right: 0px;
+}
+
+.content-group .subject-wrap .subject {
+  width: 556px;
+  height: 276px;
+}
+
+.content-group .subject-wrap .good_groups {
+  /* 其子元素为浮动元素，产生了高度塌陷，所以要清除浮动 */
+  overflow: hidden;
+  border: 1px solid #f6f6f6;
+}
+
+.good_groups .goods{
+  position: relative;
+  background-color: #fff;
+  float: left;
+  width: 160px;
+  margin: 0 12px;
+}
+
+/* 每张图片大小 */
+.good_groups .goods img {
+  width: 125px;
+  height: 125px;
+  margin: 7px auto;
+}
+
+.good_groups .goods .title {
+  color: black;
+  font-size: 12px;
+  height: 36px;
+  line-height: 17px;
+  /* 多行文字省略 */
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;/* 显示两行 */
+  -webkit-box-orient: vertical;
+}
+
+.good_groups .goods .price {
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 25px;
+  /* 居中显示 */
+  text-align: center;
+  color:#111;
+
+}
+.good_groups .goods .price .now_price {
+  font-size: 16px;
+  color: #111;
+
+}
+
+.good_groups .goods .price .market_price {
+  font-size: 14px;
+  color: #cbcbcb;
+  /* 删除线 */
+  text-decoration: line-through;
+}
+
+/* 主体模块main end*/

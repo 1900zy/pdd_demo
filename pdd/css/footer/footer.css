@@ -1,0 +1,119 @@
+.nav_footer {
+  /* position: relative; */
+  background-color:#fff;
+  padding-top: 60px;
+  width: 100%;
+}
+
+.nav_footer .footer_head {
+  /* 居中显示 */
+  margin: 0 auto;
+  background-color: #fff;
+  width: 1100px;
+  height: 240px;
+  /* border: 1px solid red; */
+}
+
+/* 二维码组 */
+.nav_footer .footer_head .code_group {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 20px;
+  margin-top: 5px;
+}
+
+/* 二维码+下方文字 */
+.nav_footer .footer_head .code_group .code{
+  display: inline-block;
+/* 让三个二维码以中部对齐 */
+  vertical-align: top;
+  margin-right: 50px;
+}
+
+/* 二维码图片 */
+.nav_footer .footer_head .code_group .code .img {
+  width: 160px;
+  height: 160px;
+}
+/* 二维码下方文字 */
+.nav_footer .footer_head .code_group .code p {
+  margin: 3px auto;
+  color: #4d4d4d;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* 联系我们 */
+.footer_head .contact {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+  width: 410px;
+  padding-left: 30px;
+  border-left: 1px solid #4d4d4d;
+}
+
+.footer_head .contact .title {
+  font-size: 24px;
+  line-height: 30px;
+  color: #4d4d4d;
+}
+
+.footer_head .contact .detail {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #4d4d4d;
+}
+
+
+.bottom_list .footer_list {
+  margin: 35px auto 45px auto;
+  /* 只要加了具体宽度，用户缩小页面时页面内容就不会跟着缩小了 */
+  width: 1200px;
+  /* 居中 */
+  text-align: center;
+}
+
+.bottom_list .footer_list ul li{
+  /* 因为ul是块级元素，转为行内块元素才能将其为一行显示 */
+  display: inline-block;
+  border-right: 1px solid #4d4d4d;
+}
+
+.bottom_list .footer_list ul li:last-child {
+  border-right: 0px;
+}
+
+.bottom_list .footer_list ul span {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  background-color:#3f3e3e;
+}
+
+/* 版权信息 */
+.nav_footer .footer_copyright {
+  width: 1200px;
+  font-size: 14px;
+  height: 180px;
+  margin: 0 auto;
+  line-height: 45px;
+  color: rgb(172, 169, 169);
+}
+
+.foo_cr a {
+  color: rgb(172, 169, 169);
+}
+
+.medicine a {
+  color: rgb(172, 169, 169);
+}
+
+.plice_record a {
+  color: rgb(172, 169, 169);
+}
